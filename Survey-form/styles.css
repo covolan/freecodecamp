@@ -1,0 +1,22 @@
+#name-email-number {
+  display: flex;
+  flex-direction: column;
+  max-width: 450px;
+  gap: 8px;
+  margin: 0 0 20px;
+}
+
+#name {
+  border-radius: 5px;
+  padding: 5px 8px;
+  font-size: 18px;
+}
+
+#dropdown {
+  margin: 10px 0 10px 0;
+  font-size: 18px;
+}
+
+input {
+  height: 24px;
+}

@@ -1,29 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Document</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <h1 id="title">Survey form</h1>
     <p id="description">
-        This survey take place to know how much you love cats
+      This survey take place to know how much you love cats
     </p>
     <form action="" id="survey-form">
-        <label for="name" id="name-label">Name:</label><input type="text" name="name" id="name" placeholder="name" />
-        <label for="email" id="email-label">E-mail:</label><input type="email" id="email" placeholder="email" />
-        <label for="number" id="number-label">Number:</label><input type="number" id="number" name="number"
-            placeholder="123 1234567" max="11" min="11" />
+      <div id="name-email-number">
+        <label for="name" id="name-label">Name:</label
+        ><input type="text" name="name" id="name" placeholder="name" required />
+        <label for="email" id="email-label">E-mail:</label
+        ><input type="email" id="email" placeholder="email" required />
+        <label for="number" id="number-label">Number:</label
+        ><input
+          type="number"
+          id="number"
+          name="number"
+          placeholder="123 1234567"
+          max="11"
+          min="11"
+        />
         <select name="dropdown" id="dropdown">
-            <option value="option1">placeholder</option>
+          <option value="option1">placeholder</option>
+          <option value="option2">placeholder2</option>
         </select>
-        <input type="radio" name="one" id="one">
-        <input type="radio" name="one" id="two">
+      </div>
+      <div class="options-form">
+        <label for="one">asdfasdf</label
+        ><input
+          class="options-selections"
+          type="radio"
+          name="one"
+          id="one"
+          value="first-radio"
+        />
+        <input
+          class="options-selections"
+          type="radio"
+          name="one"
+          id="two"
+          value="second-radio"
+        />
+        <input class="options-selections" type="checkbox" value="fristbox" />
+        <input class="options-selections" type="checkbox" value="secondbox" />
+        <input class="options-selections" type="checkbox" value="thirdbox" />
+      </div>
+      <textarea
+        name="textarea"
+        id="textarea"
+        cols="30"
+        rows="10"
+        placeholder="escreva aqui.."
+      ></textarea>
+      <button type="submit" id="submit">submit</button>
     </form>
-</body>
-
+  </body>
 </html>
