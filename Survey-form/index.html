@@ -9,11 +9,12 @@
 </head>
 
 <body>
+  <div class="body-div">
   <h1 id="title" class="top-text">Survey form</h1>
   <p id="description" class="top-text">
     This survey serve as an introduction to our company
   </p>
-  <form action="" method="post">
+  <form action="" method="post" id="survey-form">
     <fieldset>
       <label for="name" id="name-label">Name:</label><input type="text" name="name" id="name"
         placeholder="First and last name" required class="input-text" />
@@ -24,39 +25,40 @@
       <label for="dropdown">How did you heard about us?</label>
       <select name="dropdown" id="dropdown" class="input-text">
         <option value="" class="select-one">select one</option>
-        <option value="option1">placeholder2</option>
-        <option value="option2">placeholder2</option>
-        <option value="option3">placeholder2</option>
+        <option value="option1">Facebook</option>
+        <option value="option2">LinkedIn</option>
+        <option value="option3">Indeed</option>
       </select>
 
     </fieldset>
     <fieldset class="select-boxes">
-      <p>Do you already have a job:</p>
+      <p><strong>Do you already have a job in frontEnd:</strong></p>
       <div>
-        <label for="one"><input type="radio" name="one" id="one" value="first-radio" />First option</label>
+        <label for="one"><input type="radio" name="one" id="one" value="first-radio" />Yes, I already have</label>
       </div>
       <div>
-        <label for="two"><input type="radio" name="one" id="two" value="second-radio" />Second option</label>
+        <label for="two"><input type="radio" name="one" id="two" value="second-radio" />No, I don't have</label>
       </div>
-      <p>What kind of job would you want?</p>
+      <p><strong>What kind of job would you want?</strong></p>
       <div>
-        <label for="checkbox-one"><input type="checkbox" value="fristbox" id="checkbox-one" />Checkbox two</label>
-      </div>
-      <div>
-        <label for="checkbox-two"><input type="checkbox" value="secondbox" id="checkbox-two" />Checkbox three</label>
+        <label for="checkbox-one"><input type="checkbox" value="fristbox" id="checkbox-one" />FrontEnd</label>
       </div>
       <div>
-        <label for="checkbox-three"><input type="checkbox" value="thirdbox" id="checkbox-three" />Checkbox four</label>
+        <label for="checkbox-two"><input type="checkbox" value="secondbox" id="checkbox-two" />BackEnd</label>
+      </div>
+      <div>
+        <label for="checkbox-three"><input type="checkbox" value="thirdbox" id="checkbox-three" />DevOps</label>
       </div>
     </fieldset>
-    <fieldset>
+    <fieldset id="fieldset-textarea">
       <p>How do you think you fit on our company:</p>
-      <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="escreva aqui.."></textarea>
+      <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="write here.."></textarea>
     </fieldset>
     <div id="button-div">
       <button type="submit" id="submit">Finish</button>
     </div>
   </form>
+</div>
 
 </body>
 
