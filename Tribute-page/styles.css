@@ -1,0 +1,48 @@
+html {
+    font-size: 10px;
+    font-family: 'Open Sans', sans-serif;
+    color: #332d35;
+}
+
+body {
+    background-color: #F8EDE3;
+}
+
+.doc-body {
+    background-color: #D0B8A8;
+    margin: 1.5rem 1rem;
+    border-radius: 5px;
+}
+
+#title {
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+header {
+    text-align: center;
+    padding: 1rem;
+}
+
+#img-div img {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    padding: 2rem 0 0 0;
+}
+
+#img-caption {
+    font-size: 1.7rem;
+    padding: 1rem;
+}
+
+#img-div {
+    text-align: center;
+    background-color: #F8EDE3;
+    margin: 0 2rem;
+    border-radius: 5px;
+}
