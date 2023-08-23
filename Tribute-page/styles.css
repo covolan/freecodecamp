@@ -12,10 +12,11 @@ body {
     background-color: #D0B8A8;
     margin: 1.5rem 1rem;
     border-radius: 5px;
+    padding-bottom: 2rem;
 }
 
 #title {
-    font-size: 3.5rem;
+    font-size: 4.5rem;
     font-weight: 600;
 }
 
@@ -33,6 +34,7 @@ header {
     display: block;
     margin: 0 auto;
     padding: 2rem 0 0 0;
+    max-width: 100%;
 }
 
 #img-caption {
@@ -45,4 +47,32 @@ header {
     background-color: #F8EDE3;
     margin: 0 2rem;
     border-radius: 5px;
+}
+
+#trib-div {
+    text-align: justify;
+    font-size: 1.9rem;
+    padding: 2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#trib-info-title {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+#trib-div ul {
+    text-align: justify;
+    margin-left: -2rem;
+}
+
+#trib-div ul li {
+    padding-bottom: 2rem;
+}
+
+footer {
+    text-align: center;
+    font-size: 2rem;
+    padding: 0 2rem;
 }
