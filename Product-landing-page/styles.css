@@ -3,21 +3,41 @@
     padding: 0;
     font-size: 10px;
     font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
 }
+
+body {
+    background-color: #f3f3f375;
+}
+
+/* HEADER NAVBAR SECTION */
 
 .logo {
     display: flex;
     padding: 1rem 0 1rem 3rem;
-    /* border: 1px solid black; */
+    /* border: 1px solid red; */
+    width: 300px;
+}
+
+.header {
+    position: fixed;
+    display: flex;
+    width: 100%;
     background-color: #E5E5E5;
+    align-items: center;
 }
 
 .header-img {
-    width: 40px;
+    width: 4rem;
+    height: 4.6rem;
+    margin-right: 10px;
 }
 
 .logo-name {
     font-size: 3.4rem;
+    margin-right: 1rem;
+    margin-top: 0.3rem;
+    font-weight: 300;
 }
 
 .nav-bar ul {
@@ -27,19 +47,106 @@
 .nav-bar li {
     float: right;
     padding: 0 20px;
-    border: 1px black solid;
 }
 
-.nav-bar a {
+.nav-link a {
     text-decoration: none;
     display: block;
     text-align: center;
     padding: 1.4rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: black;
+}
 
+.nav-link a:hover {
+    background-color: rgb(199, 199, 199);
+    transition: ease 0.6s;
 }
 
 .page-links {
-    border: 1px black solid;
     width: 100%;
     display: block;
+}
+
+/* CONTENT SECTION */
+
+.main-content {
+    text-align: center;
+    background-color: #f3f3f3;
+    padding: 4rem 0;
+}
+
+.page-title {
+    font-size: 3.2rem;
+    padding: 8rem 0 2rem;
+}
+
+.main-content p {
+    font-size: 1.8rem;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    width: calc(60% - 3rem);
+    max-width: 450px;
+    margin: auto;
+    padding: 2rem 0;
+}
+
+#form input {
+    font-size: 2rem;
+    margin: 0.8rem 0;
+    padding: 0.6rem;
+}
+
+.button {
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: #FCA311;
+    border: none;
+}
+
+.button:hover {
+    background-color: #a16400;
+    color: #E5E5E5;
+    transition: ease-in-out 0.5s;
+}
+
+/* CONTENT TEXT */
+
+.mid-section-content {
+    padding-top: 4rem;
+    max-width: 700px;
+    margin: auto;
+}
+
+.mid-section-content h2 {
+    font-size: 2.3rem;
+    text-align: left;
+
+}
+
+.mid-section-content p {
+    text-align: justify;
+    margin-bottom: 2rem;
+}
+
+.text-icon-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.text-icon-content div {
+    /* border: 1px solid black; */
+}
+
+.icon-div {
+    margin: auto 1rem auto 0;
+}
+
+ion-icon {
+    font-size: 8rem;
+    color: #FCA311;
 }
