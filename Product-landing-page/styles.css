@@ -8,6 +8,7 @@
 
 body {
     background-color: #f3f3f375;
+    /* min-width: 640px; */
 }
 
 /* HEADER NAVBAR SECTION */
@@ -25,7 +26,7 @@ body {
     width: 100%;
     background-color: #E5E5E5;
     align-items: center;
-    z-index: 1;
+    z-index: 100;
 }
 
 .header-img {
@@ -58,11 +59,11 @@ body {
     font-size: 1.8rem;
     font-weight: 500;
     color: black;
+    transition: ease 0.6s;
 }
 
 .nav-link a:hover {
     background-color: rgb(199, 199, 199);
-    transition: ease 0.6s;
 }
 
 .page-links {
@@ -75,7 +76,8 @@ body {
 .main-content {
     text-align: center;
     background-color: #f3f3f3;
-    padding: 4rem 0;
+    padding: 4rem 0 0;
+    margin-bottom: 0;
 }
 
 .page-title {
@@ -108,18 +110,19 @@ body {
     text-transform: uppercase;
     background-color: #FCA311;
     border: none;
+    transition: ease-in-out 0.3s;
 }
 
 .button:hover {
     background-color: #a16400;
     color: #E5E5E5;
-    transition: ease-in-out 0.5s;
 }
 
 /* CONTENT TEXT */
 
 .mid-section-content {
     padding: 4rem 4rem;
+    padding-bottom: 0;
     max-width: 900px;
     margin: auto;
 }
@@ -134,6 +137,7 @@ body {
     text-align: justify;
     margin-bottom: 2rem;
     font-size: 1.7rem;
+    line-height: 2.3rem;
 }
 
 .text-icon-content {
@@ -149,6 +153,8 @@ ion-icon {
     font-size: 8rem;
     color: #FCA311;
 }
+
+/* CONTENT VIDEO AND OFFERS */
 
 .video {
     margin: 4rem 0;
@@ -187,4 +193,57 @@ ion-icon {
     font-size: 2rem;
     font-weight: 500;
     color: #14213D;
+}
+
+.btn {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border: none;
+    background-color: #FCA311;
+    color: #14213D;
+    transition: ease-in-out .3s;
+}
+
+.btn:hover {
+    background-color: #a16400;
+    color: #E5E5E5;
+}
+
+/* FOOTER CONTACT */
+
+.footer {
+    background-color: #E5E5E5;
+    margin-bottom: 0;
+    padding: 2rem 2rem 0.5rem;
+
+}
+
+.footer-links ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.footer-links a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 1rem;
+    color: #14213D;
+}
+
+.footer p {
+    font-size: 1.3rem;
+    text-align: end;
+    padding: 1rem 1rem 0;
+    margin: 0;
+}
+
+@media screen and (max-width: 750px) {
+    .nav-link a {
+        padding: 1rem;
+        font-size: 1.3rem;
+    }
 }
