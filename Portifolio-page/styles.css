@@ -2,7 +2,8 @@
     --bv1: 1px solid black;
     --bv2: 1px solid red;
     --back-color: #353535;
-    --back-color2: #D9D9D9;
+    --back-color2: #f0f0f0;
+    --back-color3: #bdbdbd;
     --title-color: #569ca0;
 }
 
@@ -21,6 +22,7 @@
     background-color: var(--back-color);
     position: fixed;
     width: 100%;
+    box-shadow: 0 4px rgba(0, 0, 0, 0.062);
 }
 
 .nav-bar>p {
@@ -73,7 +75,69 @@
     color: #353535;
 }
 
-main {
-    background-color: var(--back-color2);
+.front-page {
+    background: linear-gradient(45deg, var(--back-color2), var(--back-color3));
     height: 100vh;
+    padding-top: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
+
+.image {
+    /* border: var(--bv1); */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+img {
+    width: 50%;
+    max-width: 500px;
+    min-width: 400px;
+    padding-right: 4rem;
+    animation: 1.5s opac;
+}
+
+.synopsis {
+    /* border: var(--bv1); */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.synopsis>div>p {
+    padding: 0 4rem;
+    text-align: justify;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    letter-spacing: 0.5px;
+    font-family: 'Roboto', sans-serif;
+    animation: 2.3s opac;
+    transition: 0.5s ease-in-out;
+    max-width: 800px;
+}
+
+.synopsis>div>h1 {
+    padding: 2rem 4rem;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 4rem;
+    animation: 2.3s opac;
+    transition: 0.5s ease-in-out;
+    letter-spacing: 1px;
+}
+
+.synopsis>div>h1:hover {
+    color: var(--title-color);
+    letter-spacing: 2px;
+}
+
+@keyframes opac {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+
