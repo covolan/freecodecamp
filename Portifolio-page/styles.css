@@ -4,6 +4,7 @@
     --back-color: #353535;
     --back-color2: #f0f0f0;
     --back-color3: #bdbdbd;
+    --back-color4: #858585;
     --title-color: #569ca0;
 }
 
@@ -12,6 +13,8 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* NAVBAR CONTENT */
 
 .nav-bar {
     font-family: 'Oswald', sans-serif;
@@ -75,10 +78,15 @@
     color: #353535;
 }
 
+/* MAIN CONTENT  */
+
+/* FRONT PAGE */
+
 .front-page {
     background: linear-gradient(45deg, var(--back-color2), var(--back-color3));
     height: 100vh;
     padding-top: 5rem;
+    overflow: hidden;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -140,4 +148,26 @@ img {
         opacity: 100%;
     }
 }
+
+/* PROJECTS CONTENT */
+
+.projects {
+    height: 100vh;
+    background: linear-gradient(45deg, var(--back-color4), var(--back-color));
+    padding: 7rem 2rem;
+}
+
+.grid-projects {
+    border: var(--bv1);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.grid-projects>div {
+    border: var(--bv1);
+    width: 100%;
+    height: 40vh;
+}
+
 
