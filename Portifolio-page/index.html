@@ -18,20 +18,20 @@
 
 <body>
     <header>
-        <nav class="nav-bar">
+        <nav class="nav-bar" id="navbar">
             <div></div>
             <p class="nav-title">Covolan</p>
             <div class="mid-div"></div>
             <ul>
-                <li><a href="" class="nav-link">Home</a></li>
-                <li><a href="" class="nav-link">Projects</a></li>
-                <li><a href="" class="nav-link">Contact</a></li>
+                <li><a href="#welcome-section" class="nav-link">Home</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
             <div></div>
         </nav>
     </header>
     <main>
-        <section class="front-page">
+        <section class="front-page" id="welcome-section">
             <div class="image">
                 <img class="front-pic" src="pic.png" alt="">
             </div>
@@ -46,45 +46,48 @@
                 </div>
             </div>
         </section>
-        <section class="projects">
+        <section class="projects" id="projects">
             <div class="grid-projects">
                 <div><img
                         src="https://raw.githubusercontent.com/covolan/freecodecamp/main/Tribute-page/tribute-page.jpeg"
                         alt="">
-                    <p><a href="">Tribute Page</a></p>
+                    <p class="project-tile"><a id="tribute-page-link" href="https://github.com/covolan/freecodecamp/tree/main/Tribute-page" target="_blank">Tribute Page</a></p>
                 </div>
                 <div><img
                         src="https://raw.githubusercontent.com/covolan/freecodecamp/main/Technical-documentation-page/documentation-page.jpeg"
                         alt="">
-                    <p><a href="">Technical Documentation</a></p>
+                    <p class="project-tile"><a id="technical-documentation-page-link" href="https://github.com/covolan/freecodecamp/tree/main/Technical-documentation-page" target="_blank">Technical Documentation</a></p>
                 </div>
                 <div><img
                         src="https://raw.githubusercontent.com/covolan/freecodecamp/main/Survey-form/survey-form-page.jpeg"
                         alt="">
-                    <p><a href="">Survey Form</a></p>
+                    <p class="project-tile"><a id="survey-form-page-link" href="https://github.com/covolan/freecodecamp/tree/main/Survey-form" target="_blank">Survey Form</a></p>
                 </div>
                 <div><img
                         src="https://github.com/covolan/freecodecamp/blob/main/Product-landing-page/landing-page.jpeg?raw=true"
                         alt="">
-                    <p><a href="">Landing Page</a></p>
+                    <p class="project-tile"><a id="product-landing-page-link" href="https://github.com/covolan/freecodecamp/tree/main/Product-landing-page" target="_blank">Landing Page</a></p>
                 </div>
             </div>
         </section>
-        <section class="contact">
+        <section class="contact" id="contact">
             <div class="contact-div">
                 <div></div>
                 <div class="contact-text">
                     <h2>Lets work together!</h2>
-                    <p>get in contact:</p>
+                    <p>Get in contact:</p>
                 </div>
                 <div class="contact-links">
-                    <div><a href=""><i class="fab fa-linkedin"></i> LinkedIn</a></div>
-                    <div><a href=""><i class="fab fa-github"></i> GitHub</a></div>
-                    <div><a href=""><i class="fab fa-google"></i> Send a mail</a></div>
-                    <div><a href=""><i class="fab fa-free-code-camp"></i> FreeCodeCamp</a></div>
+                    <div><a href="https://www.linkedin.com/in/alexandre-covolan/" target="_blank" id="linkedin"><i  class="fab fa-linkedin"></i> LinkedIn</a></div>
+                    <div><a href="https://github.com/covolan" target="_blank" id="github"><i class="fab fa-github"></i> GitHub</a></div>
+                    <div><a href="mailto:covolan09@gmail.com" id="email" ><i class="fab fa-google"></i> Send a mail</a></div>
+                    <div><a href="https://www.freecodecamp.org/Covolan" id="profile-link" target="_blank"><i class="fab fa-free-code-camp"></i> FreeCodeCamp</a></div>
                 </div>
                 <div class="footer">
-                    
+                    <div></div>
+                    <div>
+                        <p>Portifolio created for <a href="https://www.freecodecamp.org/" target="_blank">FreeCodeCamp <i class="fab fa-free-code-camp"></i></a></p>
+                    </div>
                 </div>
             </div>
         </section>
